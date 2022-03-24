@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>Product Page</title>
+</head>
+<body>
+  
+  <header id="header">
+    <!-- Navbar Start -->
+    <nav id="nav-bar">
+      <div class="flex">
+        <a href="#nav-bar" class="nav-link">Home</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#email" class="nav-link">Newsletter</a>
+      </div>
+    </nav>
+<!-- Header Image Start -->
+    <div class="container">
+      <div class="grid">
+        <img class="grid-img" src="https://cdn.pixabay.com/photo/2020/11/09/05/56/logo-5725690_1280.png" alt="logo" id="header-img">
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="grid">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" name="email" id="email" placeholder="Put your email here for spam!" required />
+          <input type="submit" value="Send Me!" id="submit" class="btn" />
+        </form>
+      </div>
+    </div>
+    <div class="spacer">Space</div>
+    <div class="container">
+      
+      <!-- Video Start -->
+      <div class="grid">
+        <div class="grid-vid-desc">
+          <h1>THIS VIDEO EXPLAINS PRODUCT STUFF</h1>
+          <p>Watch it. Or don't.</p>
+        </div>
+        <video class="grid-vid" id="video" controls preload="auto">
+          <source src="prod-vid.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </main>
+</body>
+</html>
